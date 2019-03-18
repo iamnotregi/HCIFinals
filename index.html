@@ -2,11 +2,25 @@
 <html>
 <head>
 	<link rel="stylesheet" href="style.css">
-<title>CarHub</title>
+<title>CARnival</title>
 </head>
 <body>
-
-<<!-- The video -->
+<header>
+  <h1 class="logo">CARnival</h1>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+</header>
+<!-- The video -->
 <video autoplay muted loop id="myVideo">
   <source src="video.mp4" type="video/mp4">
 </video>
@@ -17,6 +31,52 @@
   <p>Lorem ipsum...</p>
   <!-- Use a button to pause/play the video with JavaScript -->
   <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+<h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gtr.jpg">
+      <img src="gtr.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="bugatti.jpg">
+      <img src="bugatti.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="mustang.jpg">
+      <img src="mustang.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="mb.jpg">
+      <img src="mb.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
 </div>
 <script>
 // Get the video
@@ -36,5 +96,6 @@ function myFunction() {
   }
 }
 </script>
+
 </body>
 </html>
